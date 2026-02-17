@@ -69,6 +69,32 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
+## 🚀 How to Run Tests
+
+# Run All Tests
+
+```
+robot tests
+```
+
+This command executes all .robot test files under the tests/ folder.
+
+# Run a Specific Test File
+
+```
+robot tests/YourTestFile.robot
+```
+
+This command executes all .robot test files under the tests/ folder.
+
+# Run with Output Directory
+
+```
+robot -d results tests
+```
+
+Outputs will be saved in the results/ folder (HTML report, log, XML).
+
 ## 🧠 Project Structure
 
 ```
