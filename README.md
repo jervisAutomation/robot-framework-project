@@ -46,6 +46,7 @@ cd robot-framework-project
 Install Requirements
 
 pip install -r requirements.txt
+
 This will install Robot Framework and other dependencies needed for the project.
 
 (Optional) Create a Virtual Environment
@@ -62,6 +63,7 @@ source venv/bin/activate
 
 ## 🧠 Project Structure
 
+```
 robot-framework-project/
 ├─ locators/ # Element locator definitions
 ├─ pages/ # Page object keywords & resources
@@ -73,6 +75,8 @@ robot-framework-project/
 ├─ log.html # Execution log
 ├─ output.xml # Raw output XML
 └─ README.md # This file
+
+```
 
 ## 📄 Reports & Results
 
