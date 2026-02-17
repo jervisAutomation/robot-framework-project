@@ -2,7 +2,7 @@
 
 Practice automation testing playground using **Robot Framework** — a framework starter for ROBOT framework test automation projects by Jervis.
 
-This repository contains example tests, locators, page objects (structured folders), and Robot Framework configurations so you can learn and start building your own automation tests.
+This repository contains example tests, locators, page objects (structured folders), and Robot Framework configurations so you can learn and start building your own automation tests for test demo site https://www.saucedemo.com/.
 
 ---
 
