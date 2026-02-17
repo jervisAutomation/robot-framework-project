@@ -30,7 +30,7 @@ Make sure you have the following installed:
 | SeleniumLibrary (optional for web tests)          | Latest              |
 | Browser drivers (e.g. ChromeDriver / geckodriver) | Latest              |
 
-Robot Framework is a keyword‑driven automation framework, easy to get started with and extendable with libraries like Selenium for web automation. :contentReference[oaicite:2]{index=2}
+Robot Framework is a keyword‑driven automation framework, easy to get started with and extendable with libraries like Selenium for web automation.
 
 ---
 
@@ -49,17 +49,25 @@ pip install -r requirements.txt
 
 This will install Robot Framework and other dependencies needed for the project.
 
-(Optional) Create a Virtual Environment
+# (Optional) Create a Virtual Environment
+
+```
 
 python3 -m venv venv
+```
 
 # Windows
 
+```
 venv\Scripts\activate
+```
 
 # macOS / Linux
 
+```
+
 source venv/bin/activate
+```
 
 ## 🧠 Project Structure
 
