@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-17T16:24:34.659633" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="D:\python project\tests\login_test.robot">
+<test id="s1-t1" name="Valid Login Test" line="5">
+<kw name="Given I open the login page" owner="steps">
+<kw name="Open Login Page" owner="login_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-17T16:24:34.861105" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-17T16:24:34.860894" elapsed="1.267440"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.128870" elapsed="0.022685"/>
+</kw>
+<status status="PASS" start="2026-02-17T16:24:34.860660" elapsed="1.291014"/>
+</kw>
+<status status="PASS" start="2026-02-17T16:24:34.860327" elapsed="1.291413"/>
+</kw>
+<kw name="And I enter username" owner="steps">
+<kw name="Enter Username" owner="login_page">
+<kw name="Input Text Field" owner="basePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.152965" elapsed="0.028592"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-17T16:24:36.181979" level="INFO">Typing text 'standard_user' into text field 'css:#user-name'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.181740" elapsed="0.110585"/>
+</kw>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2026-02-17T16:24:36.152704" elapsed="0.139729"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2026-02-17T16:24:36.152438" elapsed="0.140059"/>
+</kw>
+<arg>standard_user</arg>
+<status status="PASS" start="2026-02-17T16:24:36.152138" elapsed="0.140414"/>
+</kw>
+<kw name="And I enter password" owner="steps">
+<kw name="Enter Password" owner="login_page">
+<kw name="Input Text Field" owner="basePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.293676" elapsed="0.016604"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-17T16:24:36.310667" level="INFO">Typing text 'secret_sauce' into text field 'css:#password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.310444" elapsed="0.119229"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-17T16:24:36.293421" elapsed="0.136362"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-17T16:24:36.293161" elapsed="0.136689"/>
+</kw>
+<arg>secret_sauce</arg>
+<status status="PASS" start="2026-02-17T16:24:36.292870" elapsed="0.137034"/>
+</kw>
+<kw name="When I click the login button" owner="steps">
+<kw name="Click Login" owner="login_page">
+<kw name="Click Element" owner="basePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.430980" elapsed="0.018135"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-17T16:24:36.449463" level="INFO">Clicking button 'css:#login-button'.</msg>
+<arg>${locator}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.449269" elapsed="0.105642"/>
+</kw>
+<arg>${LOGIN_BTN}</arg>
+<status status="PASS" start="2026-02-17T16:24:36.430747" elapsed="0.124274"/>
+</kw>
+<status status="PASS" start="2026-02-17T16:24:36.430518" elapsed="0.124566"/>
+</kw>
+<status status="PASS" start="2026-02-17T16:24:36.430243" elapsed="0.124892"/>
+</kw>
+<kw name="Then I should be on page" owner="steps">
+<kw name="Verify title Page" owner="login_page">
+<kw name="Get Title Page" owner="basePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.556759" elapsed="0.020877"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-02-17T16:24:36.599371" level="INFO">${text} = Products</msg>
+<var>${text}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.577833" elapsed="0.021580"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-17T16:24:36.599775" level="INFO">Verifying element 'css:span[data-test="title"]' contains exact text 'Products'.</msg>
+<arg>${locator}</arg>
+<arg>${titlePage}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-02-17T16:24:36.599558" elapsed="0.014968"/>
+</kw>
+<arg>${PRODUCT_PAGE}</arg>
+<arg>${titlePage}</arg>
+<status status="PASS" start="2026-02-17T16:24:36.556497" elapsed="0.058130"/>
+</kw>
+<arg>${titlePage}</arg>
+<status status="PASS" start="2026-02-17T16:24:36.556186" elapsed="0.058503"/>
+</kw>
+<arg>Products</arg>
+<status status="PASS" start="2026-02-17T16:24:36.555883" elapsed="0.058858"/>
+</kw>
+<tag>bdd</tag>
+<status status="PASS" start="2026-02-17T16:24:34.859286" elapsed="1.755697"/>
+</test>
+<status status="PASS" start="2026-02-17T16:24:34.661069" elapsed="1.954568"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">bdd</stat>
+</tag>
+<suite>
+<stat name="Login Test" id="s1" pass="1" fail="0" skip="0">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
